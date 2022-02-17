@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.LoginController">
+   <children>
+      <Label layoutX="324.0" layoutY="78.0" text="Starfleet Personnel" textFill="#0026ff">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="50.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="138.0" layoutY="381.0" text="Enter Your Username: ">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="461.0" prefHeight="27.0" prefWidth="96.0" text="Passphrase:">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="login" layoutX="429.0" layoutY="606.0" mnemonicParsing="false" onAction="#handle" text="Log In">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="username" layoutX="336.0" layoutY="372.0" prefHeight="32.0" prefWidth="264.0">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextArea>
+      <ImageView fx:id="image" fitHeight="276.0" fitWidth="264.0" layoutX="48.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/logo.png" />
+         </image></ImageView>
+      <PasswordField fx:id="passphrase" layoutX="335.0" layoutY="462.0" prefHeight="25.0" prefWidth="264.0">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="errorText" alignment="CENTER" layoutX="294.0" layoutY="523.0" prefHeight="41.0" prefWidth="349.0">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
